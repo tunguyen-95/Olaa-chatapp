@@ -41,7 +41,8 @@ export default class LoginForm extends Component {
       <div className="login">
         <form onSubmit={this.handleSubmit} className="login-form">
           <label htmlFor="nickname">
-            <h2>Got a nickname?</h2>
+            <h2>Welcome to Olaa chat app</h2>
+            <p>Name your room !</p>
           </label>
           <input
             ref={input => {
@@ -51,7 +52,7 @@ export default class LoginForm extends Component {
             id="nickname"
             value={nickname}
             onChange={this.handleChange}
-            placeholder={'MYCoolUSername'}
+            placeholder={'Kiki,Mimi'}
           />
           <div className="error">{error ? error : null}</div>
         </form>
